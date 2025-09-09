@@ -5,9 +5,9 @@ module.exports = {
     container: { center: true, padding: '1rem' },
     extend: {
       colors: {
-        bg:   '#0A0A0A',     // nero profondo
-        gold: '#F5C542',     // oro più vivo
-        navy: '#0B1F4B',     // CTA blu navy
+        bg:   '#0A0A0A',   // nero profondo
+        gold: '#F5C542',   // oro più vivo
+        navy: '#0B1F4B',   // CTA blu navy
         slate: { 900: '#0F172A' }
       },
       boxShadow: {
