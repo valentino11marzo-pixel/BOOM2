@@ -1,0 +1,2 @@
+import Stripe from 'stripe'
+export async function POST(req){const stripe=new Stripe(process.env.STRIPE_SECRET_KEY||'');const {amount,success_url,cancel_url}=await req.json();const session=await stripe.checkout.sessions.create({mode:'payment',payment_method_types:['card','sepa_debit'],line_items:[{price_data:{currency:'eur',unit_amount:amount,product_data:{name:'Commissione inquilino'}},quantity:1}],success_url,cancel_url});return new Response(JSON.stringify({id:session.id,url:session.url}),{status:200})}

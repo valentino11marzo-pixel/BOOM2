@@ -1,0 +1,3 @@
+'use client'
+import Link from 'next/link'
+export default function Nav(){return(<header className="sticky top-0 z-10 backdrop-blur bg-black/60 border-b border-white/10"><div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between"><Link href="/"><div className="flex items-center gap-2"><img src="/logo.jpg" alt="BOOM" className="h-7 w-auto"/></div></Link><nav className="hidden md:flex items-center gap-5 text-sm"><Link href="/">Home</Link><Link href="/listings">Annunci</Link><Link href="/dashboard">Dashboard</Link><Link href="/login" className="btn">Accedi</Link></nav></div></header>)}

@@ -1,0 +1,8 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+:root{color-scheme:dark}body{background:#0A0A0A;color:#fff}
+.btn{ @apply inline-flex items-center justify-center px-4 py-2 rounded-full font-semibold bg-navy text-white; }
+.btn-outline{ @apply border border-white/15 bg-transparent; }
+.card{ @apply rounded-2xl border border-white/10 bg-white/5 p-4; }
+.badge{ @apply text-gold font-extrabold tracking-wide; }
+.input{ @apply w-full rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-white; }
+.label{ @apply text-xs text-white/70 mb-1; }
